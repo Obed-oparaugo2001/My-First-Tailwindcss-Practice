@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> -->
+    <title>Restaurant Page</title>
+</head>
+<body class="space-y-[13rem] max-md:grid max-md:grid-cols-1 max-md:place-content-center max-md:place-items-center max-md:space-y-10 overflow-x-hidden xl:bg-rose-600">
+ <!-- <body class="w-full max-sm:overflow-x-hidden max-sm:container max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:mx-auto"> -->
+ <!-- Sticky Navbar -->
+    <nav class="bg-transparent ml-20 max-md:-m-0 w-full h-20 max-md:bg-slate-200 fixed top-[0.10rem]">
+        
+        <!-- Nav Content -->
+        <div class="flex justify-around items-center mt-10 self-baseline">
+            
+            <!-- Logo -->
+            <div class="max-md:relative max-md:-top-5">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            
+            <!-- Items/links -->
+            <div class="text-blue-950 font-bold max-md:hidden lg:block hover:translate-x-3 hover:text-green-900 hover:transition-all" >
+                <a href="#home" class="pr-10 text-green-700">Home</a>
+                <a href="#about" class="pr-10">About</a>
+                <a href="#menu" class="pr-10">Menu</a>
+                <a href="#team" class="pr-10">Team</a>
+                <a href="#blog" class="pr-10">Blog</a>
+                <a href="#contact" class="pr-10">Contact Us</a>
+            </div>
+
+            <!-- Button -->
+            <a href="#menu" class="bg-blue-950 border rounded-3xl py-3 px-3 w-[10rem] text-white text-center font-bold hover:text-blue-950 hover:bg-green-500 max-lg:hidden">Order Now</a>
+
+            <!-- Hamburger Button -->
+            <button id="btn" class="hidden max-md:flex  max-md:flex-col space-y-3 mb-4">
+                <span class="w-10 border border-black "></span>
+                <span class="w-10 border border-black"></span>
+                <span class="w-10 border border-black"></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <!-- Home Section Container -->
+        <div class="flex justify-around w-full max-md:flex-col-reverse max-md:w-auto">
+            
+            <!-- Welcome text and button part -->
+            <div class="text-justify w-1/2 max-md:w-auto max-md:container max-md:ml-5">
+                <h3 class="text-orange-600 text-4xl font-bold pb-5 ml-[8rem] max-md:text-center max-md:-ml-1">Welcome</h3>
+
+                <h1 class="text-textColor font-bold text-6xl ml-[8rem] mb-5 max-md:text-center max-md:text-5xl max-md:-ml-1 lg:text-4xl">Enjoy The Organic Food</h1>
+
+                <p class="text-wrap ml-[8rem] text-2xl text-textColor max-md:text-2xl max-lg:text-lg max-md:text-center max-md:-m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique, maiores repellat accusantium velit voluptatem laboriosam ut rerum sequi dignissimos adipisci quae non eaque, nesciunt, asperiores voluptatum incidunt nam qui! 
+                </p>
+
+                <div class="mt-10">
+                    <a href="#about" class="text-blue-950 bg-green-500 text-center font-bold ml-[8rem] py-3 px-5 w-40 max-md:text-center relative rounded-3xl hover:bg-blue-950 hover:text-white hover:font-bold hover:transition-all max-md:relative max-md:left-[13%]">About Us</a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="w-1/2 -mt-[8rem] max-md:w-auto ">
+                <img src="img/hero.png" class=" max-md:mr-[7rem]">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <!-- About Section Container -->
+        <div class="container max-md:w-auto flex justify-around ml-40 max-md:flex-col max-md:items-center max-md:mt-10">
+
+            <!-- Image -->
+            <div class="w-1/2 max-md:w-auto max-md:-ml-20">
+                <img src="img/about.png">
+            </div>
+
+            <!-- About texts and button -->
+            <div class="w-1/2 max-md:w-auto max-md:-ml-[8rem]">
+                <!-- About texts -->
+                <h3 class="text-4xl text-orange-400 font-bold pb-10 max-md:text-center">About Us</h3>
+
+                <h1 class="text-5xl text-textColor font-extrabold pb-10 max-md:text-center max-md:mx-auto">Food Ex Restaurant</h1>
+
+                <p class="text-justify text-pretty pb-10 text-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique, maiores repellat accusantium velit voluptatem laboriosam ut rerum sequi dignissimos adipisci quae non eaque, nesciunt, asperiores voluptatum incidunt nam qui!
+                </p>
+
+                <!-- About button -->
+                <div class="max-md:w-80 max-md:flex">
+                    <a href="#about" class="w-auto  bg-green-500 px-5 py-3 rounded-3xl text-center relative top-5 max-md:left-[12rem] hover:bg-blue-950 hover:text-white hover:font-bold hover:transition-all max-md:block">About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <!-- Heading Container -->
+        <div class="">
+            <!-- Menu headings -->
+            <div class="space-y-8 max-md:mt-40">
+                <h3 class="text-6xl text-orange-500 text-center font-bold">Menu</h3>
+                <h1 class="text-6xl text-textColor text-center font-bold">Place Your Order</h1>
+            </div>
+        </div>
+        <!-- Menu Box Container -->
+        <div class="container w-full ml-[8rem] mt-10 max-md:w-auto">
+            <div class="grid grid-cols-3 gap-x-5 gap-y-10 place-content-center max-md:grid-cols-1 max-md:w-auto max-md:-ml-[7rem]">
+
+                <!-- Menu Box 1 -->
+                <div class="w-2/2 max-md:w-auto shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/pizza.jpeg" class="rounded-xl w-60 ml-10 max-md:block max-md:m-auto">
+                    <h3 class="text-textColor text-3xl text-center font-bold">
+                        Pizza
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        Hot delicious pizza
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $10 <del class="text-green-400"> $20</del>
+                    </h3>
+                </div>
+
+                <!-- Menu Box 2 -->
+                <div class="w-2/2 shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/indian_burger.jpeg" class="rounded-xl w-60 ml-10 max-md:m-auto">
+                    <h3 class="text-textColor font-bold text-3xl text-center">
+                        Indian Burger
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        Indian burger specially made for you
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $15 <del class="text-green-400"> $32</del>
+                    </h3>
+                </div>
+
+                <!-- Menu Box 3 -->
+                <div class="w-2/2 shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/beef_burger.jpeg" class="rounded-xl w-60 ml-10 max-md:m-auto">
+                    <h3 class="text-textColor font-bold text-3xl text-center">
+                        Beef Burger
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        Beef burger? We got you!
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $17 <del class="text-green-400"> $33</del>
+                    </h3>
+                </div>
+            
+                <!-- Menu Box 4 -->
+                <div class="w-2/2 shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/rice.jpeg" class="rounded-xl w-60 ml-10 max-md:m-auto">
+                    <h3 class="text-textColor font-bold text-3xl text-center">
+                        Rice
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        Jollof rice prepared with love
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $30 <del class="text-green-400"> $42</del>
+                    </h3>
+                </div>
+
+                <!-- Menu Box 5 -->
+                <div class="w-2/2 shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/spag.jpeg" class="rounded-xl w-60 ml-10 max-md:m-auto">
+                    <h3 class="text-textColor font-bold text-3xl text-center">
+                        Noodles
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        Your instant noodle coming right up
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $20 <del class="text-green-400"> 36</del>
+                    </h3>
+                </div>
+
+                <!-- Menu Box 6 -->
+                <div class="w-2/2 shadow-2xl rounded-3xl p-5 hover:scale-105 hover:transition-all">
+                    <img src="img/corn_shrimp.png" class="rounded-xl w-60 ml-10 max-md:m-auto">
+                    <h3 class="text-textColor font-bold text-3xl text-center">
+                        Corn Shrimp
+                    </h3>
+                    <h3 class="text-slate-400 text-center font-bold text-xl">
+                        The best corn shrimp you'll ever taste
+                    </h3>
+                    <h3 class="text-orange-500 text-center text-3xl font-bold">
+                        $32 <del class="text-green-400"> $42</del>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Team Section -->
+    <section id="team">
+
+        <!-- Headings Container -->
+        <div class="">
+            <div class="">
+                <h3 class="text-4xl text-orange-500 text-center font-bold mb-10">Team</h3>
+            
+                <h1 class="text-6xl text-textColor text-center font-bold mb-20">Our Experienced Chefs</h1>
+            </div>
+        </div>
+
+        <!-- Chef Box container -->
+        <div class="container ml-[8rem] w-full max-md:w-auto">
+            <div class="grid grid-cols-4 gap-3 max-md:grid-cols-1 max-md:w-auto max-md:-ml-[7rem]">
+
+                <!-- Chef Box 1 -->
+                <div class="shadow-2xl rounded-3xl max-md:w-auto hover:scale-105 hover:transition-all">
+                    <img src="img/team1.jpg" class="w-40 ml-[3.3rem] mt-8 rounded-full border-[10px] border-green-500 border-solid max-md:m-auto">
+                    <h3 class="text-xl font-bold text-textColor text-center my-5">
+                        Mark Anthony
+                    </h3>
+                    <h3 class="text-slate-500 text-center font-bold font-serif">
+                        Executive Chef
+                    </h3>
+
+                    <!-- 3 Small circles -->
+                    <div class="mt-5 flex justify-center mb-4">
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                    </div>
+                </div>
+
+                <!-- Chef Box 2 -->
+                <div class="shadow-2xl rounded-3xl hover:scale-105 hover:transition-all">
+                    <img src="img/team2.jpg" class="w-40 ml-[3.3rem] mt-8 rounded-full border-[10px] border-green-500 border-solid max-md:m-auto">
+                    <h3 class="text-xl font-bold text-textColor text-center my-5">
+                        Lisa Donald
+                    </h3>
+                    <h3 class="text-slate-500 text-center font-bold font-serif">
+                        Head Chef
+                    </h3>
+
+                    <!-- 3 Small circles -->
+                    <div class="mt-5 flex justify-center mb-4">
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                    </div>
+                </div>
+
+                <!-- Chef Box 3 -->
+                <div class="shadow-2xl rounded-3xl hover:scale-105 hover:transition-all">
+                    <img src="img/team3.jpg" class="w-40 ml-[3.3rem] mt-8 rounded-full border-[10px] border-green-500 border-solid max-md:m-auto">
+                    <h3 class="text-xl font-bold text-textColor text-center my-5">
+                        David Ben
+                    </h3>
+                    <h3 class="text-slate-500 text-center font-bold font-serif">
+                        Chef
+                    </h3>
+
+                    <!-- 3 Small circles -->
+                    <div class="mt-5 flex justify-center mb-4">
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                    </div>
+                </div>
+
+                <!-- Chef Box 4 -->
+                <div class="shadow-2xl rounded-3xl hover:scale-105 hover:transition-all">
+                    <img src="img/team4.jpeg" class="w-40 h-40 ml-[3.3rem] mt-8 rounded-full border-[10px] border-green-500 border-solid max-md:m-auto">
+                    <h3 class="text-xl font-bold text-textColor text-center my-5">
+                        Jenifer Gabriel
+                    </h3>
+                    <h3 class="text-slate-500 text-center font-bold font-serif">
+                        Chef
+                    </h3>
+
+                    <!-- 3 Small circles -->
+                    <div class="mt-5 flex justify-center mb-4">
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                        <div class="w-[3rem] h-[3rem] border-[3px] border-green-500 rounded-full mx-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Subscribe Section -->
+    <section id="subscribe">
+
+        <!-- Subscribe Section Container -->
+        <div class="container ml-[8rem] shadow-2xl h-80  p-20 max-md:py-0 max-md:h-auto max-md:w-auto max-md:m-auto">
+            <div class="flex max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-y-20 max-md:w-auto">
+
+                <!-- Discount Image -->
+                <div class="mt-3 max-md:mt-20 max-md:w-auto max-md:m-auto">
+                    <img src="img/discount.svg">
+                </div>
+
+                <!-- Texts -->
+                <div class="space-y-5 max-md:space-y-0 max-md:w-auto max-md:m-auto">
+                    <h3 class="text-3xl text-center text-orange-500">
+                        Subscribe To Our
+                    </h3>
+                    <h2 class="text-6xl text-center text-textColor font-bold">Newsletter</h2>
+                    <p class="text-lg text-slate-400 text-center leading-5">
+                        Subscribe to our newsletter and receive 20% discount from your order.
+                    </p>
+                </div>
+                <!-- Email input -->
+                <div class="max-md:w-auto max-md:m-auto">
+                    <label for="email" id="email" class="flex space-x-2 max-md:-mt-5 max-md:pb-20 max-md:mr-[4rem] mt-10">
+                        <input type="email" name="email" id="Email" placeholder="Enter your Email" class="border-2 rounded-3xl border-green-600 p-2 text-center">
+                        <a href="#" class="bg-green-300 text-white rounded-3xl py-3 px-7 text-center hover:bg-blue-950 hover:text-white hover:font-bold hover:transition-all">Subscribe</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Blog Section -->
+    <section id="blog">
+
+        <!-- Headings -->
+        <div class="space-y-10 max-md:mt-60">
+            <h3 class="text-6xl text-orange-500 text-center font-bold">Blog</h3>
+            
+            <h1 class="text-6xl text-textColor text-center font-bold">Food Updates</h1>
+        </div>
+
+        <!-- Blog boxes Container -->
+        <div class="container flex justify-around gap-x-8 px-5 ml-[8rem] max-md:flex-col max-md:gap-y-7 mt-20 max-md:-ml-[0.2rem] max-md:w-auto">
+
+            <!-- Blog box 1 -->
+            <div class="rounded-3xl shadow-2xl  max-md:w-auto hover:scale-105 hover:transition-all">
+                <div class="">
+                    <img src="img/blog1.jpg">
+                </div>
+                <div class="space-y-5 p-6">
+                    <h4 class="text-slate-400 font-bold">July 20, 2022</h4>
+                    <h3 class="text-textColor font-bold">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </h3>
+                    <h4 class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reiciendis iure deleniti nesciunt veritatis impedit error adipisci dignissimos illo minima... 
+                    </h4>
+                    <h3 class=""><a href="#more" class="text-orange-600 font-bold">Read more >>></a></h3>
+                </div>
+            </div>
+
+            <!-- Blog box 2 -->
+            <div class="rounded-3xl shadow-2xl hover:scale-105 hover:transition-all">
+                <div class="">
+                    <img src="img/blog2.jpg">
+                </div>
+                <div class="space-y-5 p-6">
+                    <h4 class="text-slate-400 font-bold">July 20, 2022</h4>
+                    <h3 class="text-textColor font-bold">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </h3>
+                    <h4 class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reiciendis iure deleniti nesciunt veritatis impedit error adipisci dignissimos illo minima... 
+                    </h4>
+                    <h3 class=""><a href="#more" class="text-orange-600 font-bold">Read more >>></a></h3>
+                </div>
+            </div>
+
+            <!-- Blog box 3 -->
+            <div class="rounded-3xl bg-transparent shadow-2xl hover:scale-105 hover:transition-all">
+                <div class="">
+                    <img src="img/blog3.jpg">
+                </div>
+                <div class="space-y-5 p-6">
+                    <h4 class="text-slate-400 font-bold">July 20, 2022</h4>
+                    <h3 class="text-textColor font-bold">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </h3>
+                    <h4 class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reiciendis iure deleniti nesciunt veritatis impedit error adipisci dignissimos illo minima... 
+                    </h4>
+                    <h3 class=""><a href="#more" class="text-orange-600 font-bold">Read more >>></a></h3>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <!-- Footer Section Container -->
+        <div class="">
+            <div class="flex justify-center gap-x-40 max-md:grid max-md:grid-cols-2 max-md:gap-0 max-md:place-content-center max-md:place-items-center">
+
+                <!-- Social Media -->
+                <div class="">
+                    <div class="">
+                        <h2 class="text-textColor text-2xl font-bold">FoodEx</h2>
+                    </div>
+                    <div class="font-bold text-slate-500 leading-10">
+                        <a href="#facebook" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">facebook</a>
+                        <a href="#instagram" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">instagram</a>
+                        <a href="#twitter" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">twitter</a>
+                        <a href="#linkedIn" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">linkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Bottom Navigation -->
+                <div class="">
+                    <div class="">
+                        <h2 class="text-textColor text-2xl font-bold">Navigation</h2>
+                    </div>
+                    <div class="font-bold text-slate-500 leading-10">
+                        <a href="#home" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">Home</a>
+                        <a href="#about" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">About</a>
+                        <a href="#menu" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">Menu</a>
+                        <a href="#team" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">Team</a>
+                        <a href="#blog" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">Blog</a>
+                        <a href="#contact" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Food menu -->
+                <div class="">
+                    <div class="">
+                        <h2 class="text-textColor text-2xl font-bold">Our Foods</h2>
+                    </div>
+                    <div class=" space-y-3 flex flex-col font-bold text-slate-500">
+                        <a href="#menu" class="hover:translate-x-3 hover:text-green-900 hover:transition-all">Pizza</a>
+                        <a href="#menu" class="hover:translate-x-3 hover:text-green-900 hover:transition-all">Indian Burger</a>
+                        <a href="#menu" class="hover:translate-x-3 hover:text-green-900 hover:transition-all">Beef Burger</a>
+                        <a href="#menu" class="hover:translate-x-3 hover:text-green-900 hover:transition-all">Rice</a>
+                        <a href="#menu" class="hover:translate-x-3 hover:text-green-900 hover:transition-all">Noodles</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="">
+                    <div class="">
+                        <h2 class="text-textColor text-2xl font-bold">Contact Us</h2>
+                    </div>
+                    <div class="font-bold text-slate-500 leading-10">
+                        <h2><em class="hover:translate-x-3 hover:text-green-900 hover:transition-all">1294 Mockingbird Hill, NYC</em></h2>
+                        <a href="#email" class="block hover:translate-x-3 hover:text-green-900 hover:transition-all"><em>hello@yourmail.com</em></a>
+                        <h2><em class="hover:translate-x-3 hover:text-green-900 hover:transition-all">(00) 123 456 789</em></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center font-bold py-10">
+            <h3 class="text-textColor">&copy; 2022 <span class="text-orange-600">Obed Tech.</span> All rights reserved</h3>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Copyright Section
+    <footer id="copyright">
+        
+    </footer> -->
+
+
+
+    <!-- JavaScript Link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
